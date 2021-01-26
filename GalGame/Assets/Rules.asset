@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03142c330ced64e0ab46cddcd0484ab7, type: 3}
+  m_Name: Rules
+  m_EditorClassIdentifier: 
+  searchPatternAsset: '*.asset'
+  searchPatternController: '*.controller'
+  searchPatternDir: '*'
+  searchPatternMaterial: '*.mat'
+  searchPatternPng: '*.png'
+  searchPatternPrefab: '*.prefab'
+  searchPatternScene: '*.unity'
+  searchPatternText: '*.txt,*.bytes,*.json,*.csv,*.xml,*htm,*.html,*.yaml,*.fnt'
+  version: 19
+  scenesInBuild:
+  - {fileID: 102900000, guid: d378f07356e960549add8141397b1462, type: 3}
+  - {fileID: 102900000, guid: 41515a2b3f98a445e88e746ac77f43d1, type: 3}
+  rules:
+  - searchPath: Assets/GameMain/Res/Scenes
+    searchPattern: '*.unity'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/GameMain/Res/UI
+    searchPattern: '*'
+    nameBy: 2
+    assetBundleName: 
+  ruleAssets:
+  - bundle: 41e8170ddcb54433404f10b5d4ac1b99.unity3d
+    path: Assets/GameMain/Res/Scenes/Game.unity
+  - bundle: f9e8a84b5c0a38967ba7c9a299d88059.unity3d
+    path: Assets/GameMain/Res/Scenes/Launch.unity
+  - bundle: 591e9a5918a2a248c8bd4a13714e1b9d.unity3d
+    path: Assets/GameMain/Res/UI/Background/bg_black.png
+  - bundle: 760e661e636697d6931b65da31e51a11.unity3d
+    path: Assets/GameMain/Res/UI/NumberIcon/0.png
+  - bundle: 760e661e636697d6931b65da31e51a11.unity3d
+    path: Assets/GameMain/Res/UI/NumberIcon/1.png
+  - bundle: 760e661e636697d6931b65da31e51a11.unity3d
+    path: Assets/GameMain/Res/UI/NumberIcon/2.png
+  - bundle: 760e661e636697d6931b65da31e51a11.unity3d
+    path: Assets/GameMain/Res/UI/NumberIcon/3.png
+  - bundle: 760e661e636697d6931b65da31e51a11.unity3d
+    path: Assets/GameMain/Res/UI/NumberIcon/4.png
+  - bundle: 760e661e636697d6931b65da31e51a11.unity3d
+    path: Assets/GameMain/Res/UI/NumberIcon/5.png
+  - bundle: 760e661e636697d6931b65da31e51a11.unity3d
+    path: Assets/GameMain/Res/UI/NumberIcon/6.png
+  - bundle: 760e661e636697d6931b65da31e51a11.unity3d
+    path: Assets/GameMain/Res/UI/NumberIcon/7.png
+  - bundle: 760e661e636697d6931b65da31e51a11.unity3d
+    path: Assets/GameMain/Res/UI/NumberIcon/8.png
+  - bundle: 760e661e636697d6931b65da31e51a11.unity3d
+    path: Assets/GameMain/Res/UI/NumberIcon/9.png
+  ruleBundles:
+  - name: 41e8170ddcb54433404f10b5d4ac1b99.unity3d
+    assets:
+    - Assets/GameMain/Res/Scenes/Game.unity
+  - name: f9e8a84b5c0a38967ba7c9a299d88059.unity3d
+    assets:
+    - Assets/GameMain/Res/Scenes/Launch.unity
+  - name: 591e9a5918a2a248c8bd4a13714e1b9d.unity3d
+    assets:
+    - Assets/GameMain/Res/UI/Background/bg_black.png
+  - name: 760e661e636697d6931b65da31e51a11.unity3d
+    assets:
+    - Assets/GameMain/Res/UI/NumberIcon/0.png
+    - Assets/GameMain/Res/UI/NumberIcon/1.png
+    - Assets/GameMain/Res/UI/NumberIcon/2.png
+    - Assets/GameMain/Res/UI/NumberIcon/3.png
+    - Assets/GameMain/Res/UI/NumberIcon/4.png
+    - Assets/GameMain/Res/UI/NumberIcon/5.png
+    - Assets/GameMain/Res/UI/NumberIcon/6.png
+    - Assets/GameMain/Res/UI/NumberIcon/7.png
+    - Assets/GameMain/Res/UI/NumberIcon/8.png
+    - Assets/GameMain/Res/UI/NumberIcon/9.png

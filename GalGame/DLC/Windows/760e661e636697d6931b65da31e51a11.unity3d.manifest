@@ -1,0 +1,29 @@
+ManifestFileVersion: 0
+CRC: 535449826
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e209b0e79309f8042be7a53628e6c2e3
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 192e690a6ab30273b050a05752742228
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+Assets:
+- Assets/GameMain/Res/UI/NumberIcon/5.png
+- Assets/GameMain/Res/UI/NumberIcon/3.png
+- Assets/GameMain/Res/UI/NumberIcon/0.png
+- Assets/GameMain/Res/UI/NumberIcon/1.png
+- Assets/GameMain/Res/UI/NumberIcon/4.png
+- Assets/GameMain/Res/UI/NumberIcon/6.png
+- Assets/GameMain/Res/UI/NumberIcon/2.png
+- Assets/GameMain/Res/UI/NumberIcon/8.png
+- Assets/GameMain/Res/UI/NumberIcon/9.png
+- Assets/GameMain/Res/UI/NumberIcon/7.png
+Dependencies: []

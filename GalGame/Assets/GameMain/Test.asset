@@ -1,0 +1,269 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9042047223035403694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dabd2e3ae6d4a144384be0d3a75fc89a, type: 3}
+  m_Name: Content
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 952, y: -72}
+  ports:
+    keys:
+    - Input
+    - output
+    - Content
+    - Speaker
+    values:
+    - _fieldName: Input
+      _node: {fileID: -9042047223035403694}
+      _typeQualifiedName: TinaXGameKit.Drama.BP.DialogueBaseNode+Connection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: ChooseList 0
+        node: {fileID: -8605874110702582562}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: -9042047223035403694}
+      _typeQualifiedName: TinaXGameKit.Drama.BP.DialogueBaseNode+Connection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Content
+      _node: {fileID: -9042047223035403694}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Speaker
+      _node: {fileID: -9042047223035403694}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Content: "\u53F2\u83B1\u59C6\u53F2\u83B1\u59C6\u53F2\u83B1\u59C6\u53F2\u83B1\u59C6\u53F2\u83B1\u59C6\u53F2\u83B1\u59C6\u53F2\u83B1\u59C6\u53F2\u83B1\u59C6\u53F2\u83B1\u59C6\u53F2\u83B1\u59C6\u53F2\u83B1\u59C6\u53F2\u83B1\u59C6\u53F2\u83B1\u59C6\u53F2\u83B1\u59C6\u53F2\u83B1\u59C6\u53F2\u83B1\u59C6"
+  Speaker: "\u53F2\u83B1\u59C6"
+  TextBind:
+  - key: Avatar
+    value: avatar_01
+  NumberBind: []
+--- !u!114 &-8605874110702582562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 061217bb5387ccd428ca416d79d6297a, type: 3}
+  m_Name: Choose
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 79, y: -44}
+  ports:
+    keys:
+    - Input
+    - Title
+    - Speaker
+    - ChooseList 0
+    - ChooseList 1
+    values:
+    - _fieldName: Input
+      _node: {fileID: -8605874110702582562}
+      _typeQualifiedName: TinaXGameKit.Drama.BP.DialogueBaseNode+Connection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Do
+        node: {fileID: -7333784149432441001}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Title
+      _node: {fileID: -8605874110702582562}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Speaker
+      _node: {fileID: -8605874110702582562}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: ChooseList 0
+      _node: {fileID: -8605874110702582562}
+      _typeQualifiedName: TinaXGameKit.Drama.BP.DialogueChoose+S_Choose, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Input
+        node: {fileID: -9042047223035403694}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: ChooseList 1
+      _node: {fileID: -8605874110702582562}
+      _typeQualifiedName: TinaXGameKit.Drama.BP.DialogueChoose+S_Choose, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Input
+        node: {fileID: -8499917809831099749}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 1
+  Title: "\u4F60\u559C\u6B22\u53F2\u83B1\u59C6\uFF0C\u8FD8\u662F\u725B\u5934\u4EBA\u5462\uFF1F"
+  Speaker: "\u54E5\u5E03\u6797"
+  ChooseList:
+  - Content: "\u9009\u62E9\u53F2\u83B1\u59C6"
+    Once: 0
+  - Content: "\u9009\u62E9\u725B\u5934\u4EBA"
+    Once: 0
+--- !u!114 &-8499917809831099749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dabd2e3ae6d4a144384be0d3a75fc89a, type: 3}
+  m_Name: Content
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 616, y: 344}
+  ports:
+    keys:
+    - Input
+    - output
+    - Content
+    - Speaker
+    values:
+    - _fieldName: Input
+      _node: {fileID: -8499917809831099749}
+      _typeQualifiedName: TinaXGameKit.Drama.BP.DialogueBaseNode+Connection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: ChooseList 1
+        node: {fileID: -8605874110702582562}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: -8499917809831099749}
+      _typeQualifiedName: TinaXGameKit.Drama.BP.DialogueBaseNode+Connection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Content
+      _node: {fileID: -8499917809831099749}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Speaker
+      _node: {fileID: -8499917809831099749}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Content: "\u725B\u5934\u4EBA\u725B\u5934\u4EBA\u725B\u5934\u4EBA\u725B\u5934\u4EBA\u725B\u5934\u4EBA\u725B\u5934\u4EBA\u725B\u5934\u4EBA\u725B\u5934\u4EBA\u725B\u5934\u4EBA\u725B\u5934\u4EBA\u725B\u5934\u4EBA\u725B\u5934\u4EBA\u725B\u5934\u4EBA\u725B\u5934\u4EBA\u725B\u5934\u4EBA\u725B\u5934\u4EBA\u725B\u5934\u4EBA\u725B\u5934\u4EBA\u725B\u5934\u4EBA\u725B\u5934\u4EBA\u725B\u5934\u4EBA\u725B\u5934\u4EBA\u725B\u5934\u4EBA\u725B\u5934\u4EBA\u725B\u5934\u4EBA\u725B\u5934\u4EBA\u725B\u5934\u4EBA"
+  Speaker: "\u73A9\u5BB6"
+  TextBind:
+  - key: Avatar
+    value: avatar_01
+  NumberBind: []
+--- !u!114 &-7333784149432441001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 630dc3ee237e9644f811580c7d8e04ad, type: 3}
+  m_Name: Start
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -257, y: -86}
+  ports:
+    keys:
+    - Do
+    values:
+    - _fieldName: Do
+      _node: {fileID: -7333784149432441001}
+      _typeQualifiedName: TinaXGameKit.Drama.BP.DialogueBaseNode+Connection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Input
+        node: {fileID: -8605874110702582562}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7de575761d432fd48a24a900405d2d4b, type: 3}
+  m_Name: Test
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -7333784149432441001}
+  - {fileID: -8605874110702582562}
+  - {fileID: -9042047223035403694}
+  - {fileID: -8499917809831099749}
+  DialogueName: test
+  DefalueKnotsName: test
+  GlobalTextVar: []
+  Content_Text_Bind_List: []
+  Content_Number_Bind_List: []

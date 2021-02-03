@@ -20,7 +20,7 @@ MonoBehaviour:
   searchPatternPrefab: '*.prefab'
   searchPatternScene: '*.unity'
   searchPatternText: '*.txt,*.bytes,*.json,*.csv,*.xml,*htm,*.html,*.yaml,*.fnt'
-  version: 2
+  version: 4
   scenesInBuild:
   - {fileID: 102900000, guid: 9fc0d4010bbf28b4594072e72b8655ab, type: 3}
   rules:
@@ -32,7 +32,17 @@ MonoBehaviour:
     searchPattern: '*.unity'
     nameBy: 1
     assetBundleName: 
+  - searchPath: Assets/GameMain/Res/Prefabs
+    searchPattern: '*.prefab'
+    nameBy: 1
+    assetBundleName: 
   ruleAssets:
+  - bundle: 35ee5a3641eed7be19c2345ef5407d5e.unity3d
+    path: Assets/GameMain/Res/Prefabs/Test.prefab
+  - bundle: 0dd51a2abb5bc7640680ee8945016072.unity3d
+    path: Assets/GameMain/Res/Prefabs/UI/UITest.prefab
+  - bundle: 41e8170ddcb54433404f10b5d4ac1b99.unity3d
+    path: Assets/GameMain/Res/Scenes/Game.unity
   - bundle: 591e9a5918a2a248c8bd4a13714e1b9d.unity3d
     path: Assets/GameMain/Res/UI/Background/bg_black.png
   - bundle: 760e661e636697d6931b65da31e51a11.unity3d
@@ -71,3 +81,12 @@ MonoBehaviour:
     - Assets/GameMain/Res/UI/NumberIcon/7.png
     - Assets/GameMain/Res/UI/NumberIcon/8.png
     - Assets/GameMain/Res/UI/NumberIcon/9.png
+  - name: 41e8170ddcb54433404f10b5d4ac1b99.unity3d
+    assets:
+    - Assets/GameMain/Res/Scenes/Game.unity
+  - name: 35ee5a3641eed7be19c2345ef5407d5e.unity3d
+    assets:
+    - Assets/GameMain/Res/Prefabs/Test.prefab
+  - name: 0dd51a2abb5bc7640680ee8945016072.unity3d
+    assets:
+    - Assets/GameMain/Res/Prefabs/UI/UITest.prefab

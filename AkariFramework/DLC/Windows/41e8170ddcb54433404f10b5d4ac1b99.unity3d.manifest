@@ -1,0 +1,44 @@
+ManifestFileVersion: 0
+CRC: 3679310381
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: dc8ac88977d6596bc2d9b913c2ef97e9
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c5100f017858fd193c8e7e09ff40e246
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 20
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 81
+  Script: {instanceID: 0}
+- Class: 104
+  Script: {instanceID: 0}
+- Class: 108
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ae75f7c69f91d314eb4d59138cb6312a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 157
+  Script: {instanceID: 0}
+- Class: 196
+  Script: {instanceID: 0}
+Assets:
+- Assets/GameMain/Res/Scenes/Game.unity
+Dependencies: []

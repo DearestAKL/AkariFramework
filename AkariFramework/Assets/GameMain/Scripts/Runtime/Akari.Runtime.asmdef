@@ -1,0 +1,15 @@
+{
+    "name": "Akari.Runtime",
+    "references": [
+        "GUID:43ce166fa1518c44797c687b1ff42535"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

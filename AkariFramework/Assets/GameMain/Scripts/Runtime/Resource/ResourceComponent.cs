@@ -1,4 +1,5 @@
 ﻿using libx;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,18 +20,16 @@ namespace Akari
         /// </summary>
         private void InitResPath()
         {
-            var manifest = BuildScript.GetManifest();
-            var assets = manifest.assets;
-            var dirs = manifest.dirs;
+            var assets = Assets.GetAllAssetPaths();
 
             string name;
             string path;
             for (int i = 0; i < assets.Length; i++)
             {
-                var thisAsset = assets[i];
-                int length = thisAsset.name.LastIndexOf('.');
-                name = thisAsset.name.Substring(0, length);
-                path = $"{dirs[thisAsset.dir]}/{thisAsset.name}";
+                path = assets[i];
+                int startIndex = path.LastIndexOf('/') + 1;
+                int length = path.LastIndexOf('.') - startIndex;
+                name = path.Substring(startIndex, length);
 
                 AllAssetPathShortName[name] = path;
             }
@@ -38,12 +37,21 @@ namespace Akari
 
         public AssetRequest LoadSprite(string assetName)
         {
-            AllAssetPathShortName.TryGetValue(assetName, out string fullPath);
-            if (fullPath == null) return null;
-
-            var request = Assets.LoadAsset(fullPath, typeof(Sprite));
+            var request = LoadAsset(assetName, typeof(Sprite));
 
             return request;
         }
+
+        public AssetRequest LoadAsset(string assetName,Type type)
+        {
+            AllAssetPathShortName.TryGetValue(assetName, out string fullPath);
+            if (fullPath == null) return null;
+
+            var request = Assets.LoadAsset(fullPath, type);
+
+            return request;
+        }
+
+
     }
 }

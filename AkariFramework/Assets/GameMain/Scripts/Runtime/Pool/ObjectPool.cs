@@ -6,15 +6,36 @@ namespace Akari
     public class ObjectPool
     {
         private readonly string m_Name;
+        private Transform m_Root;
 
-        private List<GameObject> PoolObjs = new List<GameObject>();
+        private Queue<GameObject> m_PoolObjs = new Queue<GameObject>();
         private int m_Count;
         private int m_UsingCount;
         private int m_Capacity;
 
-        public ObjectPool(string name)
+        public ObjectPool(string name,Transform parentRoot)
         {
             m_Name = name;
+            SetParentRoot(parentRoot);
+        }
+
+        public ObjectPool(string name, Transform parentRoot,GameObject obj,int count)
+        {
+            m_Name = name;
+            SetParentRoot(parentRoot);
+
+            for (int i = 0; i < count; i++)
+            {
+                PushObject(GameObject.Instantiate(obj, m_Root));
+            }
+        }
+
+        private void SetParentRoot(Transform parentRoot)
+        {
+            var go = new GameObject();
+            go.name = m_Name;
+            m_Root = go.transform;
+            m_Root.SetParent(parentRoot);
         }
 
         /// <summary>
@@ -83,8 +104,10 @@ namespace Akari
         {
             if(m_Count > 0)
             {
-                //m_Count--;
-                return PoolObjs[0];
+                m_Count--;
+                var poolObj = m_PoolObjs.Dequeue();
+                poolObj.SetActive(true);
+                return poolObj;
             }
 
             return null;
@@ -95,8 +118,10 @@ namespace Akari
         /// </summary>
         public void PushObject(GameObject poolObj)
         {
-            //m_Count++;
-            PoolObjs.Add(poolObj);
+            m_Count++;
+            m_PoolObjs.Enqueue(poolObj);
+            poolObj.SetActive(false);
+            poolObj.transform.SetParent(m_Root);
         }
     }
 }

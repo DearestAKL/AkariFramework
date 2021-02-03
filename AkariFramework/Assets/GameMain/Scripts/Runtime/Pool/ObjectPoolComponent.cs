@@ -12,13 +12,16 @@ namespace Akari
         //对象池容器
         public Dictionary<string, ObjectPool> poolDic = new Dictionary<string, ObjectPool>();
 
+        private Transform m_Root;
 
         /// <summary>
         /// 初始化
         /// </summary>
         public void Initialize()
         {
-
+            var go = new GameObject();
+            go.name = "ObjectPools";
+            m_Root = go.transform;
         }
 
         /// <summary>
@@ -34,8 +37,38 @@ namespace Akari
                 return;
             }
 
-            newObjectPool = new ObjectPool(name);
+            newObjectPool = new ObjectPool(name, m_Root);
             poolDic[name] = newObjectPool;
+        }
+
+        /// <summary>
+        /// 创建对象池
+        /// </summary>
+        /// <param name="name">对象池名字</param>
+        public void CreatObjectPool(string name)
+        {
+            if (poolDic.ContainsKey(name))
+            {
+                //已存在
+                return;
+            }
+            poolDic[name] = new ObjectPool(name, m_Root);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="name">对象池名字</param>
+        /// <param name="obj">池中对象</param>
+        /// <param name="count">初始化数量</param>
+        public void CreatObjectPool(string name,GameObject obj,int count)
+        {
+            if (poolDic.ContainsKey(name))
+            {
+                //已存在
+                return;
+            }
+            poolDic[name] = new ObjectPool(name, m_Root, obj, count);
         }
 
         /// <summary>
@@ -51,9 +84,11 @@ namespace Akari
             }
 
             //没有 创建新的
-            CreatObjectPool(name, out ObjectPool newObjectPool);
+            //CreatObjectPool(name, out ObjectPool newObjectPool);
 
-            return newObjectPool;
+            //return newObjectPool;
+
+            return null;
         }
 
         /// <summary>

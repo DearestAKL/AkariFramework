@@ -1,0 +1,30 @@
+ManifestFileVersion: 0
+CRC: 1226344681
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a04099e8aa143830822987120dacb23c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: d4b0fab617495a34e3582f9b208b9652
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 223
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+Assets:
+- Assets/GameMain/Res/Prefabs/UI/UITest.prefab
+Dependencies: []
